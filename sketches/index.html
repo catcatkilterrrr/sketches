@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name='description' content='Photos from selected Mars Rover on a random day'>
+    <title>sketches by ctay</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <style>
+    body {
+	    background: #000000;
+	    color: #FFFFFF;
+        font-family: "Lucida Console", Monaco, monospace;
+        height: 2000px;
+    }
+    h1 {
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 36px;
+        padding: 5%;
+        padding-top: 10%;
+    }
+    .column1 {
+        float: left;
+        width: 20%;
+    }
+    .column2 {
+        float: left;
+        width: 80%;
+    }
+/* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    p {
+        font-weight: lighter;
+        font-size: 24px;
+    }
+
+    h2 {
+        font-weight: normal;
+        font-size: 28px;
+        letter-spacing: 3px;
+    }
+
+    iframe {
+        width: 1280px;
+        height: 720px;
+        overflow: hidden;
+        padding:5px
+    }
+
+    button {
+        border-color: #000000 ;
+        background-color: #000000;
+        color:#FFFFFF;
+        margin-left: 5%;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        padding:1px;
+        text-decoration: none;
+        transition: text-decoration 0.33s;
+    }
+
+    #buttons {
+        margin-left:auto;
+        margin-right: auto;
+    }
+
+
+    </style>
+</head>  
+<body>
+    <div class="row">
+        <div class="column1">
+            <h1>sketches</h1>
+            <div id = "buttons">
+                <button id="collision">Collision</button> <br>
+                <button id="nothing">Nothing</button> <br>
+                <button id="color">Color</button> <br>
+            </div>
+        </div>
+        
+        <div class="column2">
+            <iframe id="p5Sketch" scrolling="no" frameborder="0" src="https://editor.p5js.org/catcatkilterrrr/embed/637Ns9ou"></iframe>
+        </div>
+      </div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/script.js"></script>
+
+</body> 
+</html>
